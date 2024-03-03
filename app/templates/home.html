@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Management App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #3494e6, #ec6ead);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .jumbotron {
+            background: rgba(255, 255, 255, 0.5);
+            color: #000;
+            padding: 50px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .card {
+            margin-top: 50px;
+        }
+
+        .card-header {
+            background: rgba(255, 255, 255, 0.8);
+            color: #000;
+            border-bottom: none;
+        }
+
+        .card-body {
+            color: #000;
+        }
+
+        .card-footer {
+            border-top: none;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="jumbotron">
+            <h1>Welcome to HR Management</h1><p></p>
+            <p class="lead">A platform for companies to manage their employees effectively.</p>
+
+            <!-- Login Card -->
+            <div class="container text-center" style="max-width: 400px;">
+                <div>
+                    <h4>Login to Your Company</h4>
+                </div>
+                <div class="jumbotron">
+                    <form method="POST" action="/">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="companyCode" name="companyCode" placeholder="Company Code">
+                        </div>
+                        {% if error %}
+                            <div class="alert alert-danger" role="alert">
+                                Company Not Registered!
+                            </div>
+                        {% endif %}
+
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </form>
+                </div>
+                <div >
+                    <p>New here? Register your company now!</p>
+                    <a href="{{ url_for('company_registration.company_registration') }}" class="btn btn-success btn-block">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
