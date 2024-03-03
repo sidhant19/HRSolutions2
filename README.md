@@ -4,7 +4,6 @@ Added A layer of hierarchy by abstracting DB with company specific code making i
 ![Screenshot from 2024-03-04 04-55-22](https://github.com/sidhant19/HRSolutions2/assets/101086027/425f54d7-c4eb-470d-ab33-26eaacb1dc16)
 ![image](https://github.com/sidhant19/HRSolutions2/assets/101086027/a1139b88-2293-47f7-9d8f-29dd9321c940)
 ![Screenshot from 2023-10-10 00-35-12](https://github.com/sidhant19/HRSolutions2/assets/101086027/228afefa-7bb1-497f-80b1-ecf5f4a101a9)
-![Screenshot from 2023-10-10 00-35-23](https://github.com/sidhant19/HRSolutions2/assets/101086027/484fd6dc-9be2-4cb5-834f-fdddaec8a1cd)
 ![Screenshot from 2023-10-10 00-35-42](https://github.com/sidhant19/HRSolutions2/assets/101086027/331bd5a6-0291-4365-8db7-4eca0804fd0c)
 ![Screenshot from 2023-10-10 00-35-46](https://github.com/sidhant19/HRSolutions2/assets/101086027/94aa7b6f-c191-404b-90ca-159516b80364)
 ![Screenshot from 2023-10-10 00-35-53](https://github.com/sidhant19/HRSolutions2/assets/101086027/5e680f6d-39fd-46e5-aac7-13d6ff3de564)
